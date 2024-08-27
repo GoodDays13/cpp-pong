@@ -1,0 +1,87 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++17",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-O2",
+      "-c",
+      "-o",
+      "build/Ball.o",
+      "src/Ball.cpp"
+    ],
+    "directory": "/home/kaiden/Coding/gametest",
+    "file": "/home/kaiden/Coding/gametest/src/Ball.cpp",
+    "output": "/home/kaiden/Coding/gametest/build/Ball.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++17",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-O2",
+      "-c",
+      "-o",
+      "build/Game.o",
+      "src/Game.cpp"
+    ],
+    "directory": "/home/kaiden/Coding/gametest",
+    "file": "/home/kaiden/Coding/gametest/src/Game.cpp",
+    "output": "/home/kaiden/Coding/gametest/build/Game.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++17",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-O2",
+      "-c",
+      "-o",
+      "build/GameObject.o",
+      "src/GameObject.cpp"
+    ],
+    "directory": "/home/kaiden/Coding/gametest",
+    "file": "/home/kaiden/Coding/gametest/src/GameObject.cpp",
+    "output": "/home/kaiden/Coding/gametest/build/GameObject.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++17",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-O2",
+      "-c",
+      "-o",
+      "build/main.o",
+      "src/main.cpp"
+    ],
+    "directory": "/home/kaiden/Coding/gametest",
+    "file": "/home/kaiden/Coding/gametest/src/main.cpp",
+    "output": "/home/kaiden/Coding/gametest/build/main.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/g++",
+      "-std=c++17",
+      "-Iinclude",
+      "-Wall",
+      "-Wextra",
+      "-O2",
+      "-c",
+      "-o",
+      "build/Paddle.o",
+      "src/Paddle.cpp"
+    ],
+    "directory": "/home/kaiden/Coding/gametest",
+    "file": "/home/kaiden/Coding/gametest/src/Paddle.cpp",
+    "output": "/home/kaiden/Coding/gametest/build/Paddle.o"
+  }
+]
