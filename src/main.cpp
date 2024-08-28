@@ -6,7 +6,7 @@ const int HEIGHT = 700;
 int main (int argc, char *argv[]) {
     Game game;
 
-    if (!game.init("My Game Window", WIDTH, HEIGHT)) {
+    if (!game.init("Pong", WIDTH, HEIGHT)) {
         return -1;
     }
 

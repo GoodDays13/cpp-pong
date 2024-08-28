@@ -47,9 +47,20 @@ bool Game::init(const char* title, int width, int height) {
 }
 
 void Game::run() {
+    unsigned long previousTime = SDL_GetTicks64();
+    unsigned short lag = 0;
     while (isRunning) {
         handleEvents();
-        update();
+
+        unsigned long currentTime = SDL_GetTicks64();
+        unsigned short elapsedTime = currentTime - previousTime;
+        previousTime = currentTime;
+        lag += elapsedTime;
+        while (lag >= 10) {
+            update();
+            lag -= 10;
+        }
+
         render();
     }
 }
@@ -80,6 +91,20 @@ void Game::render() {
     // Clear the screen with black color
     SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
     SDL_RenderClear(renderer);
+
+    int width, height;
+    SDL_GetWindowSize(window, &width, &height);
+
+    SDL_SetRenderDrawColor(renderer, 50, 50, 50,255);
+    for (int i = 0; i < height; i += 50) {
+        SDL_Rect centerLine = {
+            width / 2 + 4,
+            i,
+            8,
+            40
+        };
+        SDL_RenderFillRect(renderer, &centerLine);
+    }
 
     // Render all game objects
     for (const auto& obj : gameObjects) {
